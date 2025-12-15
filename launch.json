@@ -1,0 +1,15 @@
+
+{
+  "version": "1.0.0",
+  "configurations": [
+    {
+      "name": "Run Uvicorn (app.main)",
+      "type": "python",
+      "request": "launch",
+      "program": "python",
+      "args": ["-m", "uvicorn", "app.main:app", "--host", "127.0.0.1", "--port", "8001"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "env": { "PYTHONUNBUFFERED": "1" }
+    }
+  ]
